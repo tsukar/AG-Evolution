@@ -1,6 +1,11 @@
 import random
 import itertools
 from keras import layers
+from keras.models import Model
+from keras.layers import Input
+from keras.layers import Conv2D, Dropout, MaxPooling2D, GlobalMaxPooling2D
+from keras.layers import Add, Concatenate
+from keras.layers import Dense
 
 class SerializedLayer:
   def __init__(self, func, bypass_index=None):
