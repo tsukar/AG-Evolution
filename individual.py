@@ -54,7 +54,7 @@ class Individual(list):
         raise RuntimeError('Output shape has not yet been defined.')
 
       if (l1.output_shape == l2.output_shape) or \
-         (ignore_channnel and (l1.output_shape[:-1] == l2.output_shape[:-1])):
+         (ignore_channel and (l1.output_shape[:-1] == l2.output_shape[:-1])):
         possible_pairs.append(sorted([self.index(l1), self.index(l2)]))
 
     if possible_pairs:
