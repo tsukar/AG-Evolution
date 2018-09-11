@@ -4,6 +4,7 @@ from keras import layers
 from keras.models import Model
 from keras.layers import Input
 from keras.layers import Conv2D, Dropout, MaxPooling2D, GlobalMaxPooling2D
+from keras.layers import Activation, BatchNormalization
 from keras.layers import Add, Concatenate
 from keras.layers import Dense
 
@@ -16,7 +17,10 @@ class SerializedLayer:
 
   def evaluate(self, prev_output):
     func = self.deserialize()
-    return func(prev_output)
+    if self.class_name != 'Conv2D':
+      return func(prev_output)
+    else:
+      return Activation('relu')(BatchNormalization()(func(prev_output)))
 
   def deserialize(self):
     return layers.deserialize({'class_name': self.class_name,
@@ -86,7 +90,6 @@ def add_convolution(ind):
   conv_layer = SerializedLayer(Conv2D(32, kernel_size=(3, 3),
                                strides=1,
                                padding='same',
-                               activation='relu',
                                input_shape=input_shape))
   ind.insert(position, conv_layer)
 
