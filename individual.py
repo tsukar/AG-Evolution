@@ -23,6 +23,9 @@ class SerializedLayer:
                                'config': self.config})
 
 class Individual(list):
+  def __init__(self):
+    self.last_applied_operation = 'initialize'
+
   def sample_layer(self, class_name):
     candidates = [l for l in self if l.class_name == class_name]
     if candidates:
