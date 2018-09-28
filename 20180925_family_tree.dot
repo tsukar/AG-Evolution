@@ -1,0 +1,54 @@
+digraph {
+    node [shape=box, fontname=Courier, fontsize=64] ;
+    edge [style=bold] ;
+
+    "01-99" [label=<<table border="0"><tr><td>0.1135</td></tr><tr><td><img src="01-99_0.1135.png" /></td></tr></table>>, fontcolor=red] ;
+
+    "01-10" [label=<<table border="0"><tr><td>0.1135</td></tr><tr><td><img src="01-99_0.1135.png" /></td></tr></table>>] ;
+    "01-00" [label=<<table border="0"><tr><td>0.1135</td></tr><tr><td><img src="01-00_0.1135.png" /></td></tr></table>>] ;
+    "01-01" [label=<<table border="0"><tr><td>0.6215</td></tr><tr><td><img src="01-01_0.6215.png" /></td></tr></table>>] ;
+    "01-02" [label=<<table border="0"><tr><td>0.1135</td></tr><tr><td><img src="01-02_0.1135.png" /></td></tr></table>>] ;
+    "01-03" [label=<<table border="0"><tr><td>0.1135</td></tr><tr><td><img src="01-03_0.1135.png" /></td></tr></table>>] ;
+    "01-04" [label=<<table border="0"><tr><td>0.6105</td></tr><tr><td><img src="01-04_0.6105.png" /></td></tr></table>>] ;
+    "01-05" [label=<<table border="0"><tr><td>0.6254</td></tr><tr><td><img src="01-05_0.6254.png" /></td></tr></table>>, fontcolor=red] ;
+    "01-06" [label=<<table border="0"><tr><td>0.1135</td></tr><tr><td><img src="01-06_0.1135.png" /></td></tr></table>>] ;
+    "01-07" [label=<<table border="0"><tr><td>0.1028</td></tr><tr><td><img src="01-07_0.1028.png" /></td></tr></table>>] ;
+    "01-08" [label=<<table border="0"><tr><td>0.6033</td></tr><tr><td><img src="01-08_0.6033.png" /></td></tr></table>>] ;
+
+    "02-10" [label=<<table border="0"><tr><td>0.6254</td></tr><tr><td><img src="01-05_0.6254.png" /></td></tr></table>>, fontcolor=red] ;
+    "02-00" [label=<<table border="0"><tr><td>0.1135</td></tr><tr><td><img src="02-00_0.1135.png" /></td></tr></table>>] ;
+    "02-01" [label=<<table border="0"><tr><td>0.602</td></tr><tr><td><img src="02-01_0.602.png" /></td></tr></table>>] ;
+    "02-02" [label=<<table border="0"><tr><td>0.6132</td></tr><tr><td><img src="02-02_0.6132.png" /></td></tr></table>>] ;
+    "02-03" [label=<<table border="0"><tr><td>0.0982</td></tr><tr><td><img src="02-03_0.0982.png" /></td></tr></table>>] ;
+    "02-04" [label=<<table border="0"><tr><td>0.1135</td></tr><tr><td><img src="02-04_0.1135.png" /></td></tr></table>>] ;
+    "02-05" [label=<<table border="0"><tr><td>0.1135</td></tr><tr><td><img src="02-05_0.1135.png" /></td></tr></table>>] ;
+    "02-06" [label=<<table border="0"><tr><td>0.6106</td></tr><tr><td><img src="02-06_0.6106.png" /></td></tr></table>>] ;
+    "02-07" [label=<<table border="0"><tr><td>0.4789</td></tr><tr><td><img src="02-07_0.4789.png" /></td></tr></table>>] ;
+    "02-08" [label=<<table border="0"><tr><td>0.6013</td></tr><tr><td><img src="02-08_0.6013.png" /></td></tr></table>>] ;
+
+    "03-10" [label=<<table border="0"><tr><td>0.6254</td></tr><tr><td><img src="01-05_0.6254.png" /></td></tr></table>>] ;
+    "03-00" [label=<<table border="0"><tr><td>0.1135</td></tr><tr><td><img src="03-00_0.1135.png" /></td></tr></table>>] ;
+    "03-01" [label=<<table border="0"><tr><td>0.1135</td></tr><tr><td><img src="03-01_0.1135.png" /></td></tr></table>>] ;
+    "03-02" [label=<<table border="0"><tr><td>0.1028</td></tr><tr><td><img src="03-02_0.1028.png" /></td></tr></table>>] ;
+    "03-03" [label=<<table border="0"><tr><td>0.5999</td></tr><tr><td><img src="03-03_0.5999.png" /></td></tr></table>>] ;
+    "03-04" [label=<<table border="0"><tr><td>0.5861</td></tr><tr><td><img src="03-04_0.5861.png" /></td></tr></table>>] ;
+    "03-05" [label=<<table border="0"><tr><td>0.5987</td></tr><tr><td><img src="03-05_0.5987.png" /></td></tr></table>>] ;
+    "03-06" [label=<<table border="0"><tr><td>0.5326</td></tr><tr><td><img src="03-06_0.5326.png" /></td></tr></table>>] ;
+    "03-07" [label=<<table border="0"><tr><td>0.7398</td></tr><tr><td><img src="03-07_0.7398.png" /></td></tr></table>>, fontcolor=red] ;
+    "03-08" [label=<<table border="0"><tr><td>0.1028</td></tr><tr><td><img src="03-08_0.1028.png" /></td></tr></table>>] ;
+
+    "08-07" [label=<<table border="0"><tr><td>0.9559</td></tr><tr><td><img src="08-07_0.9559.png" /></td></tr></table>>, fontcolor=red] ;
+    "16-07" [label=<<table border="0"><tr><td>0.9911</td></tr><tr><td><img src="16-07_0.9911.png" /></td></tr></table>>, fontcolor=red] ;
+    "24-07" [label=<<table border="0"><tr><td>0.9922</td></tr><tr><td><img src="24-07_0.9922.png" /></td></tr></table>>, fontcolor=red] ;
+
+    "01-99" -> {"01-10" "01-00" "01-01" "01-02" "01-03" "01-04" "01-06" "01-07" "01-08"} ;
+    "01-99" -> "01-05" [color=red] ;
+
+    "01-05" -> {"02-00" "02-01" "02-02" "02-03" "02-04" "02-05" "02-06" "02-07" "02-08"} ;
+    "01-05" -> "02-10" [color=blue] ;
+
+    "02-10" -> {"03-10" "03-00" "03-01" "03-02" "03-03" "03-04" "03-05" "03-06" "03-08"} ;
+    "02-10" -> "03-07" [color=red] ;
+
+    "03-07" -> "08-07" -> "16-07" -> "24-07" [color=red, style="bold,dashed"];
+}
