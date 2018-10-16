@@ -1,12 +1,12 @@
 import random
 import itertools
-from keras import layers
-from keras.models import Model
-from keras.layers import Input
-from keras.layers import Conv2D, Dropout, MaxPooling2D, GlobalMaxPooling2D
-from keras.layers import Activation, BatchNormalization
-from keras.layers import Add, Concatenate
-from keras.layers import Dense
+from tensorflow.keras import layers
+from tensorflow.keras.models import Model
+from tensorflow.keras.layers import Input
+from tensorflow.keras.layers import Conv2D, Dropout, MaxPooling2D, GlobalMaxPooling2D
+from tensorflow.keras.layers import Activation, BatchNormalization
+from tensorflow.keras.layers import Add, Concatenate
+from tensorflow.keras.layers import Dense
 
 class SerializedLayer:
   def __init__(self, func, bypass_index=None):
