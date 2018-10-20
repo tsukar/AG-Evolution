@@ -58,14 +58,14 @@ class Individual(list):
     for pair in itertools.combinations(self, 2):
       l1, l2 = pair
 
-      print('l1:', l1.output_shape)
-      print('l2:', l2.output_shape)
+      print('l1:', l1.output_shape[1:])
+      print('l2:', l2.output_shape[1:])
       if l1.output_shape == None or l2.output_shape == None:
         raise RuntimeError('Output shape has not yet been defined.')
 
-      print(l1.output_shape == l2.output_shape)
-      if (l1.output_shape == l2.output_shape) or \
-         (ignore_channel and (l1.output_shape[:-1] == l2.output_shape[:-1])):
+      print(l1.output_shape[1:] == l2.output_shape[1:])
+      if (l1.output_shape[1:] == l2.output_shape[1:]) or \
+         (ignore_channel and (l1.output_shape[1:-1] == l2.output_shape[1:-1])):
         possible_pairs.append(sorted([self.index(l1), self.index(l2)]))
 
     if possible_pairs:
