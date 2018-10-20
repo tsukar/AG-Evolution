@@ -54,6 +54,7 @@ class Individual(list):
 
   def get_possible_pairs(self, ignore_channel=False):
     possible_pairs = []
+    print(self)
     for pair in itertools.combinations(self, 2):
       l1, l2 = pair
 
