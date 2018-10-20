@@ -134,14 +134,14 @@ def remove_pooling(ind):
 
 def add_skip(ind):
   pair = random.choice(ind.get_possible_pairs())
-  ind.insert(pair[1], SerializedLayer(Add(ind[pair[0]], ind[pair[1]]), bypass_index=pair[0]))
+  ind.insert(pair[1], SerializedLayer(Add(), bypass_index=pair[0]))
 
 def remove_skip(ind):
   ind.remove_layer('Add')
 
 def add_concatenate(ind):
   pair = random.choice(ind.get_possible_pairs(ignore_channel=True))
-  ind.insert(pair[1], SerializedLayer(Concatenate(ind[pair[0]], ind[pair[1]), bypass_index=pair[0]))
+  ind.insert(pair[1], SerializedLayer(Concatenate(), bypass_index=pair[0]))
 
 def remove_concatenate(ind):
   ind.remove_layer('Concatenate')
