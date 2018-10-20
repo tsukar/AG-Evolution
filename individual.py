@@ -57,6 +57,8 @@ class Individual(list):
     for pair in itertools.combinations(self, 2):
       l1, l2 = pair
 
+      print('l1:', l1.output_shape)
+      print('l2:', l2.output_shape)
       if l1.output_shape == None or l2.output_shape == None:
         raise RuntimeError('Output shape has not yet been defined.')
 
