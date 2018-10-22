@@ -78,6 +78,7 @@ def build_model(ind):
   outputs.append(Input(shape=input_shape))
   for i, l in enumerate(ind):
     print(i, l.bypass_index)
+    i += 1
     if l.bypass_index == None:
       outputs.append(l.evaluate(outputs[i - 1]))
     else:
